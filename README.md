@@ -1,2 +1,2 @@
 # Cocktails_app_V2
-took the previous project and made with modern GUI
+taking my previous cocktail app to the nexxt level
