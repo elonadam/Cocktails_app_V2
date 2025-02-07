@@ -1,0 +1,38 @@
+list of cocktails in the DB: curr 138
+
+this contains 70
+cocktails = [
+    'Mojito', 'Negroni', 'Rubicon', 'Old Fashioned', 'Martini', 'Wet martini', 'Margarita',
+    'Cosmopolitan', 'Daiquiri', 'Whiskey Sour', 'Pina Colada', 'Bellini', 'Black Russian',
+    'Bloody Mary', 'Caipirinha', 'Champagne Cocktail', 'Corpse Reviver #2', 'French 75',
+    'Mai Tai', 'Pisco Sour', 'Sazerac', 'Sidecar', 'Tom Collins', 'Vesper', 'Zombie',
+    'Boulevardier', 'French Martini', 'Hemingway Special', 'Singapore Sling', 'Last Word',
+    'Paper Plane', 'Spicy Fifty', "Planter's Punch", 'Long Island Iced Tea', 'Porn Star Martini',
+    'Gin Basil Smash', 'Naked and Famous', 'Amaretto Sour', 'Espresso Martini', 'Manhattan',
+    'Mint Julep', 'Brandy Alexander', 'Improved Whiskey Cocktail', 'Gin Rickey', 'Paloma',
+    "Bee's Knees", 'Monte Carlo', 'Aperol Spritz', 'Pink Lady', 'Jack Rose',
+    'Mexican Firing Squad Special', 'Corpse Reviver No. 2', 'Gimlet', 'Martinez', 'Silver Fizz',
+    'Daisy', 'Jungle Bird', 'Americano', 'Bamboo', "Dark 'n Stormy", 'Whiskey Smash', 'Gix Fix',
+    '20th Century', 'Aviation', 'Rye Buck', 'Moscow Mule', 'Kangaroo', 'Hemingway Daiquiri',
+    'Vieux Carre', 'Presbyterian'
+]
+
+this contains 68
+unique_top100 = [
+    "Godfather", "Passion Fruit Margarita", "Between the Sheets", "Hanky Panky",
+    "Cheeky Vimto", "The Last Word", "Poet's Dream", "Tokyo Iced Tea", "Piña Colada",
+    "French 125", "Aperol/Aperitivo Spritz", "Shaft", "El Presidente", "Bramble",
+    "Tommy's Margarita", "Batanga", "Mezcal Margarita", "White Negroni", "White Russian",
+    "Dry Martini", "Fitzgerald", "Hand Grenade", "Blood & Sand", "Milano Torino (Mi-To)",
+    "Blue Lagoon", "Division Bell", "Gin & Tonic", "La Louisiane",
+    "Slow Comfortable Screw Against The Wall", "Penicillin", "Mexican Mule",
+    "Rum Sour", "Dark 'n' Stormy", "Breakfast Martini",
+    "Red Hook", "Maple Old-Fashioned", "Army & Navy", "Vieux Carré", "Corpse Reviver",
+    "Enzoni", "Bees Knees", "Ramos Gin Fizz", "Old Cuban", "Man O' War",
+    "Screaming Orgasm", "Left Bank Martini", "Casino", "Black Manhattan",
+    "Air Mail", "Nuclear Daiquiri", "M & M", "Final Ward", "Picante de la Casa",
+    "Clover Club", "Garibaldi", "Vodka Sour", "Sex On The Beach", "White Lady",
+    "Almond Old Fashioned (bourbon-based)", "Naked & Famous", "Fancy Free",
+    "Champs-Elysees", "Jammie Dodger", "Cantaritos", "Appletini/Sour Apple Martini",
+    "Trinidad Sour", "Gin & It", "San Francisco"
+]
