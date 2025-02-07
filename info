@@ -1,4 +1,4 @@
-list of cocktails in the DB: curr 138
+list of cocktails in the DB: curr 136
 
 this contains 70
 cocktails = [
@@ -27,8 +27,8 @@ unique_top100 = [
     "Blue Lagoon", "Division Bell", "Gin & Tonic", "La Louisiane",
     "Slow Comfortable Screw Against The Wall", "Penicillin", "Mexican Mule",
     "Rum Sour", "Dark 'n' Stormy", "Breakfast Martini",
-    "Red Hook", "Maple Old-Fashioned", "Army & Navy", "Vieux Carré", "Corpse Reviver",
-    "Enzoni", "Bees Knees", "Ramos Gin Fizz", "Old Cuban", "Man O' War",
+    "Red Hook", "Maple Old-Fashioned", "Army & Navy", "Vieux Carré",
+    "Enzoni", "Ramos Gin Fizz", "Old Cuban", "Man O' War",
     "Screaming Orgasm", "Left Bank Martini", "Casino", "Black Manhattan",
     "Air Mail", "Nuclear Daiquiri", "M & M", "Final Ward", "Picante de la Casa",
     "Clover Club", "Garibaldi", "Vodka Sour", "Sex On The Beach", "White Lady",
