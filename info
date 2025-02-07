@@ -1,4 +1,4 @@
-list of cocktails in the DB: curr 136
+list of cocktails in the DB: curr 135
 
 this contains 70
 cocktails = [
@@ -17,11 +17,11 @@ cocktails = [
     'Vieux Carre', 'Presbyterian'
 ]
 
-this contains 68
+this contains 65
 unique_top100 = [
     "Godfather", "Passion Fruit Margarita", "Between the Sheets", "Hanky Panky",
     "Cheeky Vimto", "The Last Word", "Poet's Dream", "Tokyo Iced Tea", "Piña Colada",
-    "French 125", "Aperol/Aperitivo Spritz", "Shaft", "El Presidente", "Bramble",
+    "French 125", "Shaft", "El Presidente", "Bramble",
     "Tommy's Margarita", "Batanga", "Mezcal Margarita", "White Negroni", "White Russian",
     "Dry Martini", "Fitzgerald", "Hand Grenade", "Blood & Sand", "Milano Torino (Mi-To)",
     "Blue Lagoon", "Division Bell", "Gin & Tonic", "La Louisiane",
