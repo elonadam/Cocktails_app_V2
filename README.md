@@ -78,5 +78,3 @@ This project is a **cocktail recipe management application** with a **GUI built 
 - **Performance**: Cache reduces SQL queries.
 - **Scalability**: The system is structured for easy expansions.
 - **User Experience**: The app provides **fast, interactive recommendations**.
-
-Would you like any refinements to this summary? 🚀
