@@ -1,7 +1,7 @@
 import sqlite3
 import json
 
-
+# i updated this using 4o and "import_reci" files, may not work 10.2.25
 class CocktailDB:
     def __init__(self, db_path='cocktails.db'):
         self.db_path = db_path
@@ -16,16 +16,17 @@ class CocktailDB:
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 name TEXT NOT NULL UNIQUE,
                 abv REAL,
-                glass_type TEXT,
-                garnish TEXT,
                 is_easy_to_make INTEGER,  -- 0 for False, 1 for True
                 ingredients TEXT,         -- JSON string storing the list of ingredients
                 instructions TEXT,
                 personal_notes TEXT,
                 is_favorite INTEGER,      -- 0 for False, 1 for True
                 times_made INTEGER,
-                method TEXT,
-                need_to_make TEXT         -- Optional field; can be NULL
+                prep_method TEXT,
+                made_from TEXT,           -- Optional field; can be NULL
+                flavor TEXT,
+                glass_type TEXT,
+                garnish TEXT
             )
         ''')
         self.connection.commit()
@@ -33,35 +34,59 @@ class CocktailDB:
     def load_cache(self):
         """Load cocktail data from the database into the cache."""
         cursor = self.connection.cursor()
-        cursor.execute('SELECT name, abv, preparation_method, glass_type, garnish, ingredients FROM cocktails')
+        cursor.execute('''
+            SELECT id, name, abv, is_easy_to_make, ingredients, instructions, personal_notes, 
+                   is_favorite, times_made, prep_method, made_from, flavor, glass_type, garnish
+            FROM cocktails
+        ''')
         rows = cursor.fetchall()
         self.cache = {}
         for row in rows:
-            name, abv, prep_method, glass, garnish, ingredients = row
+            (id, name, abv, is_easy_to_make, ingredients, instructions, personal_notes,
+             is_favorite, times_made, prep_method, made_from, flavor, glass_type, garnish) = row
             self.cache[name] = {
+                'id': id,
+                'name': name,
                 'abv': abv,
-                'preparation_method': prep_method,
-                'glass_type': glass,
-                'garnish': garnish,
-                'ingredients': json.loads(ingredients)  # Convert JSON string back to a dict
+                'is_easy_to_make': is_easy_to_make,
+                'ingredients': json.loads(ingredients),  # Convert JSON string back to a list
+                'instructions': instructions,
+                'personal_notes': personal_notes,
+                'is_favorite': is_favorite,
+                'times_made': times_made,
+                'prep_method': prep_method,
+                'made_from': made_from,
+                'flavor': flavor,
+                'glass_type': glass_type,
+                'garnish': garnish
             }
         return self.cache
 
-    def add_cocktail(self, name, abv, prep_method, glass, garnish, ingredients):
+    def add_cocktail(self, name, abv, is_easy_to_make, ingredients, instructions, personal_notes,
+                     is_favorite, times_made, prep_method, made_from, flavor, glass_type, garnish):
         ingredients_json = json.dumps(ingredients)
         cursor = self.connection.cursor()
         cursor.execute('''
-            INSERT INTO cocktails (name, abv, preparation_method, glass_type, garnish, ingredients)
-            VALUES (?, ?, ?, ?, ?, ?)
-        ''', (name, abv, prep_method, glass, garnish, ingredients_json))
+            INSERT INTO cocktails (name, abv, is_easy_to_make, ingredients, instructions, personal_notes, 
+                                   is_favorite, times_made, prep_method, made_from, flavor, glass_type, garnish)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ''', (name, abv, is_easy_to_make, ingredients_json, instructions, personal_notes,
+              is_favorite, times_made, prep_method, made_from, flavor, glass_type, garnish))
         self.connection.commit()
         # Update the in-memory cache.
         self.cache[name] = {
             'abv': abv,
-            'preparation_method': prep_method,
-            'glass_type': glass,
-            'garnish': garnish,
-            'ingredients': ingredients
+            'is_easy_to_make': is_easy_to_make,
+            'ingredients': ingredients,
+            'instructions': instructions,
+            'personal_notes': personal_notes,
+            'is_favorite': is_favorite,
+            'times_made': times_made,
+            'prep_method': prep_method,
+            'made_from': made_from,
+            'flavor': flavor,
+            'glass_type': glass_type,
+            'garnish': garnish
         }
 
     def close(self):

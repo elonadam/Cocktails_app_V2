@@ -1,13 +1,12 @@
 import json
 import sqlite3
 
-
 # Load JSON data into a Python dictionary.
-with open('cocktail_book.json','r', encoding='utf-8') as file:
+with open('cocktail_book.json', 'r', encoding='utf-8') as file:
     cocktails_data = json.load(file)
 
 # Connect to (or create) the SQLite database.
-conn = sqlite3.connect('venv/cocktails.db')
+conn = sqlite3.connect('cocktails.db')
 cursor = conn.cursor()
 
 # Create the cocktails table.
@@ -22,8 +21,11 @@ CREATE TABLE IF NOT EXISTS cocktails (
   personal_notes TEXT,
   is_favorite INTEGER,
   times_made INTEGER,
-  method TEXT,
-  need_to_make TEXT
+  prep_method TEXT,
+  made_from TEXT,
+  flavor TEXT,
+  glass_type TEXT,
+  garnish TEXT
 )
 ''')
 
@@ -39,15 +41,19 @@ for key, recipe in cocktails_data.items():
     personal_notes = recipe.get("personal_notes")
     is_favorite = 1 if recipe.get("is_favorite", False) else 0
     times_made = recipe.get("times_made", 0)
-    method = recipe.get("method")
-    # 'need_to_make' is optional; use None if not provided.
-    need_to_make = recipe.get("need_to_make", None)
+    prep_method = recipe.get("method")
+    made_from = recipe.get("made_from")
+    flavor = recipe.get("flavor", None)  # TODO delete the none after all has
+    glass_type = recipe.get("glass_type", None)
+    garnish = recipe.get("garnish", None)
 
     # Insert the recipe into the table.
     cursor.execute('''
-    INSERT INTO cocktails (name, abv, is_easy_to_make, ingredients, instructions, personal_notes, is_favorite, times_made, method, need_to_make)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    ''', (name, abv, is_easy_to_make, ingredients, instructions, personal_notes, is_favorite, times_made, method, need_to_make))
+   INSERT INTO cocktails (name, abv, is_easy_to_make, ingredients, instructions, personal_notes, 
+                           is_favorite, times_made, prep_method, made_from, flavor, glass_type, garnish)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ''', (name, abv, is_easy_to_make, ingredients, instructions, personal_notes,
+          is_favorite, times_made, prep_method, made_from, flavor, glass_type, garnish))
 
 # Commit the changes and close the connection.
 conn.commit()
