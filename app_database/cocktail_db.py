@@ -3,7 +3,7 @@ import json
 
 # i updated this using 4o and "import_reci" files, may not work 10.2.25
 class CocktailDB:
-    def __init__(self, db_path='cocktails.db'):
+    def __init__(self, db_path='app_database/cocktails.db'):
         self.db_path = db_path
         self.connection = sqlite3.connect(self.db_path)
         self.create_tables()
