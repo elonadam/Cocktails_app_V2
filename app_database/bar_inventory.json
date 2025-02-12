@@ -1,0 +1,53 @@
+[
+    {"bottle_name": "Jameson", "type": "Irish Whiskey", "category": "Whiskey", "unit": "ml", "quantity": 700, "abv": 40, "is_open": 1},
+    {"bottle_name": "Jim Beam Rye", "type": "Rye Whiskey", "category": "Whiskey", "unit": "ml", "quantity": 700, "abv": 40, "is_open": 1},
+    {"bottle_name": "Jack Daniel’s Single Barrel Select", "type": "Tennessee Whiskey", "category": "Whiskey", "unit": "ml", "quantity": 700, "abv": 45, "is_open": 1},
+    {"bottle_name": "Jack Daniel’s Old No. 7", "type": "Tennessee Whiskey", "category": "Whiskey", "unit": "ml", "quantity": 700, "abv": 40, "is_open": 1},
+    {"bottle_name": "The Glenlivet 12-Year-Old", "type": "Single Malt Scotch Whisky", "category": "Whiskey", "unit": "ml", "quantity": 700, "abv": 40, "is_open": 0},
+    {"bottle_name": "Aberlour 14-Year-Old Double Cask", "type": "Single Malt Scotch Whisky", "category": "Whiskey", "unit": "ml", "quantity": 700, "abv": 40, "is_open": 0},
+    {"bottle_name": "Johnnie Walker Black Label", "type": "Blended Scotch Whisky", "category": "Whiskey", "unit": "ml", "quantity": 700, "abv": 40, "is_open": 1},
+    {"bottle_name": "Ballantine’s Finest", "type": "Blended Scotch Whisky", "category": "Whiskey", "unit": "ml", "quantity": 700, "abv": 40, "is_open": 1},
+
+    {"bottle_name": "Malfy Gin Rosa", "type": "Flavored Gin", "category": "Gin", "unit": "ml", "quantity": 700, "abv": 41, "is_open": 1},
+    {"bottle_name": "Malfy Gin Originale", "type": "Gin", "category": "Gin", "unit": "ml", "quantity": 700, "abv": 41, "is_open": 1},
+    {"bottle_name": "Malfy Gin Con Limone", "type": "Flavored Gin", "category": "Gin", "unit": "ml", "quantity": 700, "abv": 41, "is_open": 1},
+    {"bottle_name": "Monkey 47 Schwarzwald Dry Gin", "type": "Gin", "category": "Gin", "unit": "ml", "quantity": 500, "abv": 47, "is_open": 0},
+    {"bottle_name": "Roku Gin", "type": "Gin", "category": "Gin", "unit": "ml", "quantity": 700, "abv": 43, "is_open": 0},
+    {"bottle_name": "Beefeater 24", "type": "Gin", "category": "Gin", "unit": "ml", "quantity": 700, "abv": 45, "is_open": 1},
+    {"bottle_name": "Drumshanbo Gunpowder Irish Gin", "type": "Gin", "category": "Gin", "unit": "ml", "quantity": 700, "abv": 43, "is_open": 0},
+    {"bottle_name": "Beefeater London Dry Gin", "type": "Gin", "category": "Gin", "unit": "ml", "quantity": 700, "abv": 40, "is_open": 1},
+    {"bottle_name": "Bombay Bramble", "type": "Flavored Gin", "category": "Gin", "unit": "ml", "quantity": 700, "abv": 37.5, "is_open": 1},
+    {"bottle_name": "Hendrick’s Gin", "type": "Gin", "category": "Gin", "unit": "ml", "quantity": 700, "abv": 44, "is_open": 1},
+    {"bottle_name": "Hayman’s Sloe Gin", "type": "Flavored Gin", "category": "Gin", "unit": "ml", "quantity": 700, "abv": 26, "is_open": 1},
+
+    {"bottle_name": "Bacardi Carta Blanca", "type": "White Rum", "category": "Rum", "unit": "ml", "quantity": 700, "abv": 37.5, "is_open": 1},
+    {"bottle_name": "Malibu Original", "type": "Coconut Rum", "category": "Rum", "unit": "ml", "quantity": 700, "abv": 21, "is_open": 0},
+    {"bottle_name": "Havana Club Añejo 3 Años", "type": "Rum", "category": "Rum", "unit": "ml", "quantity": 700, "abv": 40, "is_open": 1},
+
+    {"bottle_name": "Rémy Martin V.S.O.P", "type": "Cognac", "category": "Brandy & Cognac", "unit": "ml", "quantity": 700, "abv": 40, "is_open": 1},
+    {"bottle_name": "Stock 84 Riserva Invecchiata", "type": "Brandy", "category": "Brandy & Cognac", "unit": "ml", "quantity": 700, "abv": 38, "is_open": 1},
+
+    {"bottle_name": "Stolichnaya (Stoli) Vodka", "type": "Vodka", "category": "Vodka", "unit": "ml", "quantity": 700, "abv": 40, "is_open": 1},
+
+
+    {"bottle_name": "La Medida Mezcal", "type": "Mezcal", "category": "Tequila & Mezcal", "unit": "ml", "quantity": 700, "abv": 45, "is_open": 0},
+    {"bottle_name": "Avión Silver Tequila", "type": "Tequila", "category": "Tequila & Mezcal", "unit": "ml", "quantity": 700, "abv": 40, "is_open": 0},
+    {"bottle_name": "Jose Cuervo Especial", "type": "Gold Tequila", "category": "Tequila & Mezcal", "unit": "ml", "quantity": 700, "abv": 38, "is_open": 1},
+
+    {"bottle_name": "Cynar", "type": "Bitter Liqueur", "category": "Liqueur", "unit": "ml", "quantity": 700, "abv": 16.5, "is_open": 0},
+    {"bottle_name": "Martini & Rossi Bitter", "type": "Bitter Aperitif", "category": "Liqueur", "unit": "ml", "quantity": 700, "abv": 25, "is_open": 0},
+    {"bottle_name": "Campari", "type": "Aperitif", "category": "Liqueur", "unit": "ml", "quantity": 700, "abv": 24, "is_open": 1},
+    {"bottle_name": "Kahlúa", "type": "Coffee Liqueur", "category": "Liqueur", "unit": "ml", "quantity": 700, "abv": 20, "is_open": 1},
+    {"bottle_name": "Bols Triple Sec", "type": "Orange Liqueur", "category": "Liqueur", "unit": "ml", "quantity": 700, "abv": 38, "is_open": 1},
+    {"bottle_name": "Bols Blue Curaçao", "type": "Blue Curacao", "category": "Liqueur", "unit": "ml", "quantity": 700, "abv": 21, "is_open": 1},
+    {"bottle_name": "Bols Elderflower", "type": "Elderflower Liqueur", "category": "Liqueur", "unit": "ml", "quantity": 700, "abv": 17, "is_open": 1},
+    {"bottle_name": "Becherovka", "type": "Herbal Liqueur", "category": "Liqueur", "unit": "ml", "quantity": 700, "abv": 38, "is_open": 1},
+    {"bottle_name": "Noilly Prat Original Dry Vermouth", "type": "Vermouth", "category": "Liqueur", "unit": "ml", "quantity": 750, "abv": 18, "is_open": 1},
+    {"bottle_name": "Cointreau", "type": "Orange Liqueur", "category": "Liqueur", "unit": "ml", "quantity": 700, "abv": 40, "is_open": 0},
+
+    {"bottle_name": "Angostura Aromatic Bitters", "type": "Bitters", "category": "Bitters", "unit": "bottle", "quantity": 1, "abv": 44.7, "is_open": 0},
+
+    {"bottle_name": "1883 Maison Routin Fleur de Sureau", "type": "Elderflower Syrup", "category": "Non-Alcoholic Syrups", "unit": "bottle", "quantity": 1, "abv": null, "is_open": 1},
+    {"bottle_name": "1883 Maison Routin Fruit de la Passion", "type": "Passion Fruit Syrup", "category": "Non-Alcoholic Syrups", "unit": "bottle", "quantity": 1, "abv": null, "is_open": 1},
+    {"bottle_name": "Monin Peach Syrup", "type": "Peach Syrup", "category": "Non-Alcoholic Syrups", "unit": "bottle", "quantity": 1, "abv": null, "is_open": 0}
+]
