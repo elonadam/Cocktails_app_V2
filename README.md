@@ -1,4 +1,4 @@
-# Cocktails_app_V2
+# Cocktails_app_V2 - pyqt5
 ### **Cocktail App: Project Summary & Flow**
 
 #### **Overview**
